@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferentes eventos</title>
+</head>
+<body>
+    <video controls oncanplay="myFuncion()">
+        <source src="https://www.youtube.com/watch?v=rGHF18PuaBY" type="https://www.youtube.com/watch?v=rGHF18PuaBY">
+        <source src="https://www.youtube.com/watch?v=w8_sP9UVeww" type="https://www.youtube.com/watch?v=w8_sP9UVeww">
+        Your browser does not support HTML5 video
+    
+    </video>
+    <p>Video <a href="https://www.youtube.com/watch?v=-v1nDN93FfM" target="_blank">Musica</a>.</p>
+        
+    <br><br><br><br>
+
+    <div onmouseover="this.style.backgroundColor='green'">Palabra destacada</div>
+    <br><br>
+    <div onmouseover="this.style.backgroundColor='red'">Palabra destacada</div>
+    <br><br>
+
+    <button onclick="alert('Que tengas un buen dia')">Presiona el boton Click</button>
+    <br><br>
+    <input type="button" value="Pinchame y veras" onclick="alert('Gracias por pinchar')">
+
+
+    <!-- <div onclick="alert('HAs pinchado con el raton');" onmouseover="alert('Acabas de pasar el raton por encima');">
+    Puedes pinchar sobre este elemento o simplemente pasa por encima
+    </div> -->
+
+    <br><br>
+
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Que dia y hora es?</button>
+    <br><br>
+    Ingrese palabra: <input type="text" id="fname" onblur="myFuncion()">
+    <p>Al salir del campo de entrada, es activa una funcion que transforma el texto introducido en mayusculas</p>
+
+    <p id="demo"></p>
+
+
+    <script src="evento.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holi</title>
+</head>
+<body>
+    <input type="button" id="btnCrearpersona" value="Crear Persona" onclick="CrearNuevaPersona()">
+    <input type="button" value="Lista Persona" onclick="ListaPersona()">
+
+    <div id="frmCrearPersona" style="display: none;">
+        <br>
+        <h3 id="Titlulo">Creando Persona</h3>
+        <div class="formulario">
+            <label for="">Id:</label>
+            <input type="text" id="txtId" readonly>
+        </div>
+        <div class="formulario">
+            <label for="">Nombre:</label>
+            <input type="text" id="txtNombre">
+        </div>
+        <div class="formulario">
+            <label for="">Apellidos:</label>
+            <input type="text" id="txtApellidos">
+        </div>
+        <div class="formulario">
+            <label for="">Telefono:</label>
+            <input type="text" id="txtTelefono">
+        </div>
+        <div class="formulario">
+            <label for="">Edad:</label>
+            <input type="number" id="txtEdad">
+        </div>
+        <br>
+        <input type="button" id="btnGuardar" value="Guardar" onclick="GuardarPersona()">
+    </div>
+
+    <div id="lsitarPersona" style="display: none;">
+        <br>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Telefono</th>
+                <th>Edad</th>
+                <th>&nbsp;</th><!--es un espacio -->
+            </tr>
+            <tbody id="tbPersonas"></tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="persona.js"></script>
+</body>
+</html>
